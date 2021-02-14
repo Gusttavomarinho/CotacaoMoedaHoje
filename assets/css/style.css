@@ -1,0 +1,20 @@
+.navbar {
+  background-color: #5C257F !important;
+}
+
+body {
+  background-color: #D697FF;
+}
+
+.card {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.card-titile {
+  color: #6B4C7F;
+}
+
+.card-body {
+  color: #933CCC;
+}
