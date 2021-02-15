@@ -78,3 +78,26 @@ axios({
   valores(dados);
   meuGrafico(dados);
 }).catch(err=>console.log("error"));
+
+
+/** refatorando o codigo usando promises */
+prencherValores();
+
+function prencherValores(){
+    Promise.all([
+        awesomeapiget('USD-BRL'), 
+        awesomeapiget('EUR-BRL'),
+        awesomeapiget('BTC-BRL')
+    ])
+  .then(function (results) {
+    console.log(results);
+    dolarPage.innerHTML = parseFloat(results[0].data.USD.bid).toFixed(2);
+    euroPage.innerHTML = parseFloat(results[1].data.EUR.bid).toFixed(2);
+    bitPage.innerHTML = parseFloat(results[2].data.BTC.bid).toFixed(2);
+
+  });
+}
+
+function awesomeapiget(params){
+    return axios.get(`https://economia.awesomeapi.com.br/all/${params}`);
+}
