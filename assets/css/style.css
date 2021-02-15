@@ -19,6 +19,11 @@ body {
   color: #933CCC;
 }
 
+.card-body img {
+  width: 30px;
+  height: 30px;
+}
+
 .teste {
-  
+
 }
