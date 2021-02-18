@@ -27,30 +27,46 @@
   </div>
 </nav>
 <div class="container">
-  <div class="card">
-    <div class="card-body">
-      <img src="./assets/img/dollar.png" class="card-img-bottom" alt="dolar icon">
-      <h5 class="card-titile">Dolar</h5>
-      <span id="dolar"></span>
-    </div>
+  <div class="row align-items-center">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <img src="./assets/img/dollar.png" class="card-img-bottom" alt="dolar icon">
+            <h5 class="card-titile">Dolar</h5>
+            <span id="dolar"></span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <img src="./assets/img/euro.png" class="card-img-bottom" alt="euro icon">
+            <h5 class="card-titile">Euro</h5>
+            <span id="euro"></span>
+           
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <img src="./assets/img/btc.png" class="card-img-bottom" alt="btc icon">
+            <h5 class="card-titile">Bitcoin</h5>
+            <span id="bitcoin"></span>
+          </div>
+        </div>
+      </div>
+      <!--grafico na pagina inicial-->
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h1>Grafico Dolar x Euro</h1>
+          <canvas id="myChart" width="100vh" height="30vh"></canvas>
+        </div>
   </div>
   
-    <div class="card">
-      <div class="card-body">
-        <img src="./assets/img/euro.png" class="card-img-bottom" alt="euro icon">
-        <h5 class="card-titile">Euro</h5>
-        <span id="euro"></span>
-       
-      </div>
-    </div>
+    
 
-    <div class="card">
-      <div class="card-body">
-        <img src="./assets/img/btc.png" class="card-img-bottom" alt="btc icon">
-        <h5 class="card-titile">Bitcoin</h5>
-        <span id="bitcoin"></span>
-      </div>
-    </div>
+    
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
