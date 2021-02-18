@@ -1,9 +1,9 @@
 .navbar {
-  background-color: #5C257F !important;
+  background-color: #230A59 !important;
 }
 
 body {
-  background-color: #D697FF;
+  background-color: #829FD9;
 }
 
 .card {
@@ -12,11 +12,11 @@ body {
 }
 
 .card-titile {
-  color: #6B4C7F;
+  color: #000;
 }
 
 .card-body {
-  color: #933CCC;
+  color: #5C73F2;
 }
 
 .card-body img {
