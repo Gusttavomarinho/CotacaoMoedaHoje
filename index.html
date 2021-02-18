@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Cotações de Moedas</title>
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -31,7 +32,7 @@
       <div class="col">
         <div class="card">
           <div class="card-body">
-            <img src="./assets/img/dollar.png" class="card-img-bottom" alt="dolar icon">
+            <img src="./assets/img/dollar-coin.svg" class="card-img-bottom" alt="dolar icon">
             <h5 class="card-titile">Dolar</h5>
             <span id="dolar"></span>
           </div>
@@ -40,7 +41,7 @@
       <div class="col">
         <div class="card">
           <div class="card-body">
-            <img src="./assets/img/euro.png" class="card-img-bottom" alt="euro icon">
+            <img src="./assets/img/euro-coin.svg" class="card-img-bottom" alt="euro icon">
             <h5 class="card-titile">Euro</h5>
             <span id="euro"></span>
            
@@ -50,7 +51,7 @@
       <div class="col">
         <div class="card">
           <div class="card-body">
-            <img src="./assets/img/btc.png" class="card-img-bottom" alt="btc icon">
+            <img src="./assets/img/bitcoin-black.svg" class="card-img-bottom" alt="btc icon">
             <h5 class="card-titile">Bitcoin</h5>
             <span id="bitcoin"></span>
           </div>
@@ -71,5 +72,8 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="./assets/js/cotacao.js"></script>
+<script>
+      feather.replace();
+</script>
 </body>
 </html>
